@@ -1,8 +1,11 @@
-const Booking = require("./models/booking");const mongoose = require("mongoose");
+require("dotenv").config();
 
-mongoose.connect("mongodb+srv://aryan:aryan%405555@cluster0.efidmhp.mongodb.net/expert-booking?retryWrites=true&w=majority")
-.then(() => console.log("MongoDB connected ✅"))
-.catch(err => console.log(err));
+const Booking = require("./models/booking");
+const mongoose = require("mongoose");
+
+mongoose.connect(process.env.MONGO_URI)
+  .then(() => console.log("MongoDB connected ✅"))
+  .catch(err => console.log(err));
 
 const cors = require("cors");
 const express = require("express");
