@@ -2,6 +2,11 @@
 
 A full-stack Expert Session Booking System built using React, Node.js, Express, and MongoDB.
 
+## Live Demo
+
+Frontend:
+https://expert-booking-system.vercel.app
+
 ## Features
 
 - View expert list
